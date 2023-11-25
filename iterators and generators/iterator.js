@@ -27,8 +27,7 @@ function takeNext(arr) {
     var i = 0;
     return {
       next: () => {
-        if(i < arr.length) return {done: false, value: arr[i++] }
-        return {done: true, value: undefined}
+       return  (i < arr.length )?  {done: false, value: arr[i++] } : {done: true, value: undefined}
       }
     }
   }
